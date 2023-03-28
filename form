@@ -91,7 +91,7 @@ const forms = () => {
 
 export default forms;
 
-
+///////////////////////////////////////////////////
 const postData = async (url, data) => {
     let res = await fetch(url, {
         method: "POST",
@@ -100,3 +100,6 @@ const postData = async (url, data) => {
 
     return await res.text();
 };
+/////////////////////////////////////////////////
+<?php
+echo var_dump($_POST);
